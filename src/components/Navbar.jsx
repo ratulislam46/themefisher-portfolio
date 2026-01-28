@@ -1,33 +1,27 @@
 import React from 'react';
-import { FiMenu } from 'react-icons/fi';
+import { IoHomeOutline } from "react-icons/io5";
+import Profile from './Profile';
 
 const Navbar = () => {
-  return (
-    <nav className="fixed top-0 left-0 right-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <div className="">
-            <h2 className="text-2xl font-bold">Daryl <span className='text-[#F89222]'> Smith</span></h2>
-            <p className='text-[#C2C2C2]'>UI/UX designer</p>
-          </div>
+    return (
+        <section className='flex'>
 
-          {/* Desktop Navigation - Static */}
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-gray-600 font-medium">Home</a>
-            <a href="#" className="bg-blue-600 text-white px-6 py-2 rounded-full font-medium">
-              Talk To Me
-            </a>
-          </div>
+            <div>
+                <Profile />
+            </div>
 
-          {/* Mobile menu button - Static */}
-          <div className="md:hidden text-gray-600">
-            <FiMenu size={24} />
-          </div>
-        </div>
-      </div>
-    </nav>
-  );
+            <div className='flex mx-2 justify-between w-full border p-4 bg-[#121414]'>
+                <div>
+                    <div className='flex items-center gap-2'>
+                        <IoHomeOutline size={40} className='p-2 bg-gradient-to-l from-[#F89222] to-[#F5BD4D] rounded' /> Home
+                    </div>
+                </div>
+                <div>
+                    <button className='border border-[#F5BD4D] text-[#F5BD4D] px-4 py-2 rounded-2xl hover:bg-[#F89222] hover:text-white'>Talk To Me</button>
+                </div>
+            </div>
+        </section>
+    );
 };
 
 export default Navbar;
