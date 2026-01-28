@@ -1,8 +1,16 @@
 @import "tailwindcss";
 
+/* Tailwind directives - শুরুতে রাখতে হবে */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS variables */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #1E40AF;   /* Add your primary color */
+  --secondary: #F59E0B; /* Add your secondary color */
 }
 
 @theme inline {
