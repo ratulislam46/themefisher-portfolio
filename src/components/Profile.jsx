@@ -9,9 +9,9 @@ import { FaPinterest } from "react-icons/fa";
 
 const Profile = () => {
     return (
-        <section className='border'>
+        <section>
             {/* nav  */}
-            <div className='mx-2 w-full mb-10 p-4 bg-[#121414]'>
+            <div className='p-4 bg-[#121414]'>
                 <h2 className='font-bold text-2xl flex gap-1'>Daryl <span className='text-[#F89222]'>Smith</span></h2>
                 <p className='text-gray-400'>UI/UX design</p>
             </div>
@@ -29,12 +29,12 @@ const Profile = () => {
 
                 {/* Profile Image  */}
                 <div>
-                    <div className="relative w-[368px] h-[504px] bg-black  overflow-hidden">
+                    <div className="relative lg:w-[368px] lg:h-[504px] bg-black overflow-hidden">
                         <Image
                             src="/image/profile.png"
                             alt="Profile Picture"
                             fill
-                            className="object-cover"
+                            className="object-cover pt-10"
                         />
 
                         {/* Gradient overlay */}
@@ -42,11 +42,11 @@ const Profile = () => {
                     </div>
 
                     <div className='flex justify-center gap-3 py-4 bg-black'>
-                        <CiFacebook size={24} className='bg-gray-800 rounded-full p-1 cursor-pointer' />
-                        <CiLinkedin size={24} className='bg-gray-800 rounded-full p-1 cursor-pointer' />
-                        <FaPinterest size={24} className='bg-gray-800 rounded-full p-1 cursor-pointer' />
-                        <CiInstagram size={24} className='bg-gray-800 rounded-full p-1 cursor-pointer' />
-                        <CiTwitter size={24} className='bg-gray-800 rounded-full p-1 cursor-pointer' />
+                        <CiFacebook size={24} className='bg-gray-800 rounded-full p-1 cursor-pointer hover:text-[#F89222]' />
+                        <CiLinkedin size={24} className='bg-gray-800 rounded-full p-1 cursor-pointer hover:text-[#F89222]' />
+                        <FaPinterest size={24} className='bg-gray-800 rounded-full p-1 cursor-pointer hover:text-[#F89222]' />
+                        <CiInstagram size={24} className='bg-gray-800 rounded-full p-1 cursor-pointer hover:text-[#F89222]' />
+                        <CiTwitter size={24} className='bg-gray-800 rounded-full p-1 cursor-pointer hover:text-[#F89222]' />
                     </div>
                 </div>
             </div>
